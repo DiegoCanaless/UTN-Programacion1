@@ -82,6 +82,7 @@ else:
     print('Acceso denegado')"""
 
 #Ejercicio 9
+"""
 name= input("Ingrese su nombre:")
 sexo= input("Ingrese su sexo M/F: ")
 sexo = sexo.upper()
@@ -102,3 +103,96 @@ elif sexo == "F":
         print("Error al ingresar el nombre")
 else:
     print("Ingresaste mal el sexo")
+"""
+
+#Ejercicio 10
+"""
+age = int(input("Ingrese su edad: "))
+
+if age < 4:
+    print("Precio de entrada: GRATIS")
+elif (age >= 4 and age < 18):
+    print("Precio de entrada: $500")
+else:
+    print("Precio de entrada: $1000")
+"""
+
+#Ejercicio 11
+"""
+print('\n-- Pizzeria "Bella Napoli" --')
+
+print("\nBienvenido.\nPara ordenar una pizza vegetariana ingrese A.\nPara ordenar una pizza NO vegetariana ingrese B")
+pizza = input().upper()
+
+print("\n-INGREDIENTES BASE-")
+print(" > Mozzarella \n > Tomate")
+
+print("\nPuede elegir uno de los siguientes ingredientes para agregarle:")
+
+if pizza == "A":                                   # Pizza vegetariana
+    print("1) Pimiento \n2) Tofu")
+    ingredient = int(input())
+    if ingredient == 1:
+        ingredient = "Pimiento"
+    elif ingredient == 2:
+        ingredient = "Tofu"
+elif pizza == "B":
+    print("1) Peperoni \n2) Jamón \n3) Salmón ")    #Pizza no vegetariana
+    ingredient = int(input())
+    if ingredient == 1:
+        ingredient = "Peperoni"
+    elif ingredient == 2:
+        ingredient = "Jamón"
+    elif ingredient == 3:
+        ingredient = "Salmón"
+
+print("-------------------------")
+if pizza == "A":
+    print("PIZZA VEGETARIANA")
+    print("Ingredientes:")
+    print(" > Mozzarella \n > Tomate \n >", ingredient)
+    print("Disfrute su comida!")
+elif pizza == "B":
+    print("PIZZA NO VEGETARIANA")
+    print("Ingredientes:")
+    print(" > Mozzarella \n > Tomate \n >", ingredient)
+    print("Disfrute su comida!")
+"""
+
+#Ejercicio 12
+"""
+current_year = int(input("Ingrese el año actual: "))
+year = int(input("Ingrese cualquier otro año: "))
+
+if year == current_year:
+    print("Los años ingresados son los mismos.")
+elif (year < current_year):
+    print("Han pasado ", (current_year - year), " años desde ", year, " hasta el año actual.")
+else:
+    print("Faltan ", (year - current_year), " años para llegar a ", current_year, ".")
+"""
+
+#Ejercicio 13
+"""
+num1 = int(input("Ingrese el primer numero (Mayor que 0): "))
+num2 = int(input("Ingrese el segundo numero (Mayor que 0): "))
+
+if num1 > num2:
+    larger = num1
+    smaller = num2
+elif num2 > num1:
+    larger = num2
+    smaller = num1
+
+print(" > Mayor: ", larger, "\n > Menor: ", smaller)
+
+if ((larger <= 0) or (smaller <= 0)):
+    print("Por lo menos uno de los numeros ingresados no es valido.")
+else:
+    if larger % smaller == 0:
+        print(larger, " es multiplo de ", smaller)
+    else:
+        print(larger, " no es multiplo de ", smaller)
+"""
+
+#Ejercicio 14
