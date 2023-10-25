@@ -196,3 +196,118 @@ else:
 """
 
 #Ejercicio 14
+"""
+coefficient1 = float(input("Ingrese el coeficiente A: "))
+coefficient2 = float(input("Ingrese el coeficiente B: "))
+
+if coefficient1 == 0:
+    if coefficient2 == 0:
+        print("La ecuacion tiene infinitas soluciones")
+    else:
+        print("La ecuacion no tiene solucion.")
+else:
+    result = -coefficient2/coefficient1
+    print("La solucion de la ecuacion es x =", result)
+"""
+
+#Ejercicio 15
+"""
+import math
+
+option = str(input("Ingrese 'T' para obtener el area de un triángulo y 'C' para la area de un círculo: "))
+option = option.upper()
+
+if option == "T" :
+    base = float(input("Ingrese la base del triangulo: "))
+    height = float(input("Ingrese la altura del triangulo: "))
+    area = 0.5*base*height
+    print("El area del triangulo es: " + str(area))
+elif option == "C" :
+    radio = float(input("Ingrese el radio: "))
+    area = radio**2 * math.pi
+    print("El area del circulo es: " + str(area))
+else:
+    print("Ingreso un valor invalido")
+"""
+
+#Ejercicio 16
+"""
+number1 = int(input("Ingrese el primer valor: "))
+number2 = int(input("Ingrese el segundo valor: "))
+
+print("Ingrese el numero de la operacion que desea hacer")
+option = int(input(" 1-Suma  \n 2-Multiplicacion \n 3-Resta \n 4-Division \n"))
+
+if option == 1:
+    result = number1  + number2
+    print("El resultado es: " + str(result))
+elif option == 2:
+    result = number1  * number2
+    print("El resultado es: " + str(result))
+elif option == 3:
+    result = number1  - number2
+    print("El resultado es: " + str(result))
+elif option == 4:
+    result = number1  / number2
+    print("El resultado es: " + str(result))
+"""
+
+#Ejercicio 17
+"""
+day = input("Ingrese un dia de la semana: ")
+day = day.upper()
+if day == "LUNES":
+    print("Ingreso el 1er dia de la semana")
+elif day == "VIERNES":
+    print("Ingreso el 5to dia de la semana")
+elif day == "SABADO" or day == "DOMINGO":
+    print("Ingreso un dia del fin de semana")
+elif day == "MARTES" or day == "MIERCOLES" or day == "JUEVES":
+    print("Ingreso un dia entre el 2do y 4to dia de la semana")
+else:
+    print("Ingreso un dia invalido")
+"""
+
+#Ejercicio 18
+"""
+hours_worked = int(input("Ingrese las horas trabajadas este mes: "))
+salary = int(input("Ingresa el salario x hora"))
+
+if hours_worked > 48:
+    overtime_hours = hours_worked-48
+    print("Trabajo un total de " + str(overtime_hours) + " horas extras")
+    salary = (salary*48) + ((salary*1.10)*overtime_hours)
+    print("El salario total que recibio fue: $" + str(salary))
+else:
+    print("El salario total fue: $" + str(hours_worked*salary))
+"""
+
+#Ejercicio 19
+"""
+pencils = int(input("Ingrese la cantidad de la lapices a comprar"))
+cost = 60
+
+if pencils >= 1000:
+    end_price = pencils* (cost*0.7)
+    print("El precio de la compra fue de: $" + str(end_price))
+else:
+    end_price = pencils*cost
+    print("El precio de la compra fue de: $" + str(end_price))
+"""
+
+#Ejercicio 20
+"""
+sum = 0
+for i in range(1,5):
+    number= int(input("Ingrese la nota N° " + str(i)+ " "))
+    sum = sum+ number
+
+average = sum /4
+
+if average >= 6:
+    print("Alumno aprobado")
+elif average<6:
+    print("Alumno desaprobado")
+else:
+    print("Ocurrio un error")
+"""
