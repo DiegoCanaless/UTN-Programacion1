@@ -1,6 +1,6 @@
 import functions
 from functions import *
-# Listas de prueba:
+# Listas de prueba (El programa a detectar 2 o mas de estas listas en el adn dara true:
 #horizontal_test_list = [('A', 'T', 'G', 'C', 'G', 'A'), ('C', 'A', 'G', 'T', 'G', 'C'), ('T', 'T', 'A', 'T', 'T', 'T'), ('A', 'G', 'A', 'C', 'G', 'G'), ('C', 'C', 'C', 'C', 'T', 'A'), ('T', 'C', 'A', 'C', 'T', 'G')]
 #vertical_test_list = [('A', 'T', 'G', 'C', 'G', 'A'), ('C', 'A', 'G', 'T', 'G', 'C'), ('T', 'T', 'A', 'T', 'G', 'T'), ('A', 'G', 'A', 'C', 'G', 'G'), ('G', 'C', 'G', 'T', 'C', 'A'), ('T', 'C', 'A', 'C', 'T', 'G')]
 #diagonal_test_list = [('A', 'T', 'G', 'C', 'G', 'A'), ('C', 'A', 'G', 'T', 'G', 'C'), ('T', 'T', 'A', 'T', 'T', 'T'), ('A', 'G', 'A', 'A', 'G', 'G'), ('G', 'C', 'G', 'T', 'C', 'A'), ('T', 'C', 'A', 'C', 'T', 'G')]
